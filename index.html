@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sampad Karmaker — Backend &amp; Systems Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid-bg"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home"><span class="dot"></span>sampad@karmaker:~$</a>
+    <nav class="links" id="navLinks">
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-top">
+      <div class="hero-copy">
+        <div class="eyebrow">back-end ai engineering intern @ flyrank ai</div>
+        <h1>Sampad Karmaker builds systems that <span class="accent">stay online</span> when it matters.</h1>
+        <p class="lede">Backend-leaning developer working across PHP/Laravel, Java, C/C++ and Python, from socket-based multiplayer servers to a flood-relief coordination platform. Currently interning on the back-end AI team at FlyRank AI.</p>
+      </div>
+      <div class="avatar-frame">
+        <img src="images/sampad.jpg" alt="Sampad Karmaker">
+        <div class="avatar-tag">sampad.jpg</div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+    <div class="boot-panel">
+      <div class="boot-head"><span class="tl"></span><span class="tl"></span><span class="tl"></span>&nbsp;&nbsp;status.log</div>
+      <div class="boot-body" id="bootBody"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">About Me</h2></div>
+    <div class="about-grid">
+      <div>
+        <p>I'm a final-year Computer Science &amp; Engineering student at United International University, Dhaka. I'm finishing my Final Year Design Project, <b>ReliefLink BD</b>, a flood relief coordination system built with a six-person team.</p>
+        <p>My interests sit on the backend: relational data modelling, REST APIs, and the networking and concurrency layer under the products people click on. Recent coursework in machine learning (HMMs, SVMs, transformer attention, backprop) now shapes how I build systems.</p>
+      </div>
+      <div>
+        <p><b>Career goal:</b> backend engineering roles in Bangladesh's growing tech sector, using PHP/Laravel, MySQL, REST APIs, Git and Docker.</p>
+        <p><b>Interests:</b> backend architecture, AI systems, multiplayer networking, databases.</p>
+        <div class="scholarship-tag">★ Merit scholarships: 50% then 25% tuition waiver (CGPA ≥ 3.5)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">Skills</h2></div>
+    <div class="skill-groups">
+      <div class="skill-group"><h4>Languages</h4><ul><li>C</li><li>C++</li><li>Java</li><li>Python</li><li>PHP</li></ul></div>
+      <div class="skill-group"><h4>Backend &amp; Data</h4><ul><li>Laravel</li><li>MySQL</li><li>REST APIs</li><li>Java (JDBC)</li></ul></div>
+      <div class="skill-group"><h4>Frontend</h4><ul><li>HTML / CSS</li><li>JavaScript</li><li>Vue.js</li><li>Chart.js</li></ul></div>
+      <div class="skill-group"><h4>Systems &amp; Tools</h4><ul><li>Git &amp; GitHub</li><li>Docker</li><li>Socket Programming</li><li>Multithreading</li><li>TensorFlow.js</li></ul></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">Projects</h2></div>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <!-- Replace .preview with: <img class="preview-img" src="images/gamehub.png" alt="GameHub screenshot"> -->
+        <div class="preview"><span>GameHub</span><code>:5557-5559 · TCP</code></div>
+        <div class="p-body">
+          <h3>GameHub: Multiplayer Gaming Platform</h3>
+          <p>Java/JavaFX platform with Tic-Tac-Toe, Memory and Pacman over TCP sockets, SHA-256 auth, a thread-per-session server and a MySQL leaderboard. Built with a 4-person team.</p>
+          <div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">MySQL</span><span class="tag">Sockets</span></div>
+          <div class="p-actions">
+            <a class="btn btn-primary" href="https://github.com/SampadKarmaker/GameHub-Multiplayer-Platform" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-ghost" href="https://github.com/SampadKarmaker/GameHub-Multiplayer-Platform" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="preview"><span>Face Mask Detection</span><code>MobileNetV2 · OpenCV</code></div>
+        <div class="p-body">
+          <h3>Face Mask Detection</h3>
+          <p>Real-time mask classifier using MobileNetV2 over OpenCV's SSD face detector, with live voice alerts via pyttsx3 when a face has no mask.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">MobileNetV2</span></div>
+          <div class="p-actions">
+            <a class="btn btn-primary" href="https://github.com/SampadKarmaker/Face-Mask-Detection" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-ghost" href="https://github.com/SampadKarmaker/Face-Mask-Detection" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="preview"><span>Home Services</span><code>PHP · MySQL · Vue.js</code></div>
+        <div class="p-body">
+          <h3>Community Home Services Platform</h3>
+          <p>PHP/MySQL marketplace connecting service providers and customers, deployed on InfinityFree with a Vue.js front end, profile uploads and admin review.</p>
+          <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Vue.js</span></div>
+          <div class="p-actions">
+            <a class="btn btn-primary" href="https://YOUR-SITE.infinityfreeapp.com" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-ghost" href="https://github.com/SampadKarmaker" target="_blank" rel="noopener">Source Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="preview"><span>AI Interview Prep</span><code>face-api.js · TF.js</code></div>
+        <div class="p-body">
+          <h3>AI-Based Interview Preparation System</h3>
+          <p>Browser-based mock interview tool using face-api.js and TensorFlow.js for real-time facial-expression feedback, with no server-side inference.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">TensorFlow.js</span></div>
+          <div class="p-actions">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-ghost" href="https://github.com/SampadKarmaker" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="preview"><span>Quizera</span><code>PHP · Chart.js</code></div>
+        <div class="p-body">
+          <h3>Quizera: Quiz Platform</h3>
+          <p>PHP admin panel for building and managing quizzes, with Chart.js dashboards for results and participant analytics.</p>
+          <div class="tags"><span class="tag">PHP</span><span class="tag">Chart.js</span><span class="tag">MySQL</span></div>
+          <div class="p-actions">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-ghost" href="https://github.com/SampadKarmaker" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card feature">
+        <div class="preview"><span>ReliefLink BD</span><code>Final Year Design Project</code></div>
+        <div class="p-body">
+          <h3>ReliefLink BD: Flood Relief Management System</h3>
+          <p>Web and mobile platform coordinating flood relief in Bangladesh, connecting affected communities, volunteers and relief organizations. Group 261-043, 6 members. Supervisor: Farhan Anan Himu.</p>
+          <div class="tags"><span class="tag">Full-stack</span><span class="tag">Web + Mobile</span></div>
+          <div class="p-actions">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a class="btn btn-ghost" href="https://github.com/SampadKarmaker" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">Education</h2></div>
+    <div class="edu-list">
+      <div class="edu-item">
+        <div class="school">United International University (UIU)</div>
+        <div class="meta">B.Sc. in Computer Science &amp; Engineering, final year (current)</div>
+      </div>
+      <div class="edu-item">
+        <div class="school">Barishal Government College</div>
+        <div class="meta">HSC, Science</div>
+        <div class="score">GPA 5.00 / 5.00</div>
+      </div>
+      <div class="edu-item">
+        <div class="school">Taslima Memorial Academy</div>
+        <div class="meta">SSC, Science</div>
+        <div class="score">GPA 4.78 / 5.00</div>
+      </div>
+      <div class="edu-item">
+        <div class="school">Taslima Memorial Academy</div>
+        <div class="meta">JSC</div>
+        <div class="score">GPA 4.80 / 5.00</div>
+      </div>
+    </div>
+    <h3 class="sub-title">Experience &amp; Certifications</h3>
+    <div class="cert-grid">
+      <div class="cert"><h4>Back-End AI Engineering Intern</h4><p>FlyRank AI · current</p></div>
+      <div class="cert"><h4>SQL (Intermediate) Certificate</h4><p>HackerRank · Mar 2026</p></div>
+      <div class="cert"><h4>SQL Basic Certificate</h4><p>HackerRank · Mar 2026</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="sec-head"><span class="sec-num">05</span><h2 class="sec-title">Contact</h2></div>
+    <div class="contact-grid">
+      <div>
+        <p class="muted">Open to backend engineering opportunities. Send a message or reach me on the links below.</p>
+        <p class="muted"><b>Email:</b> <a href="mailto:sampadkarmaker@gmail.com">sampadkarmaker@gmail.com</a></p>
+        <div class="contact-row">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/sampad-karmaker-6a22ba3b4" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/sampadkarmaker" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-links">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    <a href="https://github.com/sampadkarmaker" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/sampad-karmaker-6a22ba3b4" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  © <span id="year"></span> Sampad Karmaker. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
