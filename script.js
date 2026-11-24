@@ -25,9 +25,9 @@ document.getElementById('contactForm').addEventListener('submit', e => {
 const lines = [
   'booting <b>sampad_karmaker.dev</b> ...',
   '<span class="ok">[OK]</span> education: UIU, CSE, final year',
-  '<span class="ok">[OK]</span> scholarships: 50% then 25% waiver',
+  '<span class="ok">[OK]</span> scholarships: 50% and 25% waivers',
   '<span class="ok">[OK]</span> mounted 6 projects, see /projects',
-  '<span class="ok">[OK]</span> now serving: Back-End AI Intern @ FlyRank AI',
+  '<span class="ok">[OK]</span> now learning: React, Node.js, MongoDB',
   '<span class="ok">[READY]</span> accepting connections on linkedin, github'
 ];
 const body = document.getElementById('bootBody');
