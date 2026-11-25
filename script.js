@@ -26,7 +26,7 @@ const lines = [
   'booting <b>sampad_karmaker.dev</b> ...',
   '<span class="ok">[OK]</span> education: UIU, CSE, final year',
   '<span class="ok">[OK]</span> scholarships: 50% and 25% waivers',
-  '<span class="ok">[OK]</span> mounted 6 projects, see /projects',
+  '<span class="ok">[OK]</span> mounted 5 projects, see /projects',
   '<span class="ok">[OK]</span> now learning: React, Node.js, MongoDB',
   '<span class="ok">[READY]</span> accepting connections on linkedin, github'
 ];
